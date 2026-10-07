@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Área Protegida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="pagina pagina-dashboard">
+    <section class="dashboard vidro">
+      <div class="topo-dashboard">
+        <div>
+          <p class="tag">Área protegida</p>
+          <h1>Você está logado</h1>
+        </div>
+
+        <button id="btnSair" class="btn-sair">Sair</button>
+      </div>
+
+      <div class="box-info">
+        <h2 id="boasVindas">Carregando...</h2>
+        <p id="emailUsuario"></p>
+      </div>
+
+      <div class="explicacao">
+        <h3>O que aconteceu?</h3>
+        <p>Depois do login, o servidor salvou seus dados na session.</p>
+        <p>O navegador recebeu um cookie e envia esse cookie automaticamente nas próximas requisições.</p>
+        <p>Por isso a rota protegida consegue reconhecer quem você é.</p>
+      </div>
+
+      <button id="btnTestarRota" class="btn-rota">
+        Testar rota protegida
+      </button>
+
+      <pre id="respostaApi"></pre>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

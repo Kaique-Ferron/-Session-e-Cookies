@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login com Session</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="pagina pagina-login">
+      <section class="card vidro">
+        <p class="tag">Desvendando o Código</p>
+        <h1>Como o site sabe que você fez login?</h1>
+        <p class="subtitulo">
+          Entre com usuário e senha para criar uma session no servidor.
+        </p>
+
+        <form id="formLogin">
+          <label for="usuario">Usuário</label>
+          <input
+            type="text"
+            id="usuario"
+            placeholder="Digite admin"
+            autocomplete="username"
+          />
+
+          <label for="senha">Senha</label>
+          <input
+            type="password"
+            id="senha"
+            placeholder="Digite 123456"
+            autocomplete="current-password"
+          />
+
+          <button type="submit">Entrar no sistema</button>
+        </form>
+
+        <div class="dados-teste">
+          <strong>Dados para teste:</strong>
+          <span>Usuário: admin</span>
+          <span>Senha: 123456</span>
+        </div>
+
+        <p id="mensagem" class="mensagem"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
